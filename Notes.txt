@@ -1,0 +1,32 @@
+Turtorial Video
+https://www.youtube.com/watch?v=4a9VxZjnT7E
+
+************************************
+SQL MANAGER NOTES
+create table dbo.Department(
+DepartmentId int identity(1,1),
+DepartmentName varchar(500)
+)
+
+select * from dbo.Department
+
+insert into dbo.Department values ('IT')
+______________________________________
+create table dbo.Employee(
+EmployeeId int identity(1,1),
+EmployeeName varchar(500),
+Department varchar(500),
+DateOfJoining date,
+PhotoFileName varchar(500)
+)
+
+************************************
+WEB-API NOTES 
+
+<add name="SQLDbConnection"
+    connectionString="Server=DESKTOP-LRT15J5; Database=FYP_1;User Id=myUsername;Password=myPassword;"
+    providerName="System.Data.SqlClient" />
+
+
+"DevConnection": "Server=DevDBServer;Database=MyDatabase;User ID=some_userid;Password=some_password;Integrated Security=SSPI;Trusted_Connection=True;"
+"DevConnection": "Server=DevDBServer;Database=MyDatabase;User ID=some_userid;Password=some_password;Integrated Security=False;Trusted_Connection=False;"
